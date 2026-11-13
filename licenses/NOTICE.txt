@@ -1,0 +1,6 @@
+Three.js 0.187.0 — MIT license, see ../vendor/THREE_LICENSE.txt.
+
+The fitted facial surface is derived from MediaPipe's canonical face model:
+https://github.com/google-ai-edge/mediapipe/blob/master/mediapipe/modules/face_geometry/data/canonical_face_model.obj
+Copyright Google LLC. Apache License 2.0; see MediaPipe_APACHE-2.0.txt.
+Modifications: calibrated multi-view landmark fit and smooth facial deformation; facial surface blended into the reconstructed mesh, hair retained; baked shared color texture and skeletal animation added.
