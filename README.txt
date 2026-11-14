@@ -1,14 +1,15 @@
-WOMAN / THREE.JS VIEWER — repaired face, retained hair
+WOMAN / THREE.JS VIEWER — smooth jaw, speech and eye rig (V4)
 
 Live viewer: https://fangde.github.io/woman-mesh-viewer/
 
-For local development run: python3 -m http.server 8000
-Open http://127.0.0.1:8000/ in your browser. Opening index.html directly as a file does not allow the browser to fetch the GLB.
+The latest Blender smooth-mouth model is synchronized here: one mesh with 209,591 triangles, one shared 4096x5120texture, 14 bones, 16 morph targets and an 8-second sampled animation. The continuous jaw now moves the chin and lower face; lip correctives preserve mouth shapes. Eye movement and blinks remain active. The texture is fixedUV for all views.
 
-Controls: drag to orbit; scroll/pinch to zoom; right-drag to pan. Play/pause, scrub and speed control the actual skeletal animation. Texture, Studio, Clay and Wireframe are four materials on the same mesh. Show skeleton exposes the six-bone rig; Slow turntable rotates the camera.
+Click “播放中文说话” to start the synthetic Mandarin voice and synchronized demo. Audio starts only after a click. Speech timing is approximate; this is not automatic lip sync for arbitrary new audio. Play/pause, timeline and speed also control the demo. Face/Full/Side/Back change framing. Drag to orbit, scroll/pinch to zoom, right-drag to pan.
 
-The GLB contains one 180,000-triangle skinned mesh, one shared 4096x4096 color texture, six joints and one eight-second animation. All camera angles and animation frames share the same UV image. No camera-specific image switching or pre-rendered image sequence is used.
+Expand “手动调整嘴部与眨眼” to set Open,A,E,O,U,FV,MBP,Smile or left/right blink sliders. Manual controls pause the demo; the Jaw bone is updated with the lip morphs to retain the Blender corrective deformation. Click “回到动画” or “播放中文说话” to resume. Texture/Studio/Clay/Wireframe inspect the same live geometry. The GLB download includes skinning, morphs and animation, with the shared texture embedded. Audio is a separate speech.mp3 asset.
 
-V3 uses a clean MediaPipe face template fitted to eye, nose, mouth and jaw landmarks from 26 original calibrated views. The two cheek/temple cavities were replaced by the fitted facial surface. V2 hair shape and color are retained, with small surface resampling changes. Shoulders retain the earlier filled repair, which seals part of the original mechanical openings. Unobserved back views remain approximate. The texture includes baked lighting, not separated albedo. The template is an inferred anatomical prior, not newly observed geometry.
+For local use, serve this directory with python3 -m http.server 8000, then open http://127.0.0.1:8000/. The companion local viewer package has a double-click launcher. All Three.js modules are bundled; no CDN is required.
 
-The viewer and all Three.js modules are bundled locally; no CDN is required. The GLB has its texture embedded; the PNG download provides the same shared atlas separately. Third-party notices are in dist/licenses/ and dist/vendor/THREE_LICENSE.txt.
+The original face template was fitted to 26 calibrated source views, preserving hair and the earlier shoulder repair. Eyes, mouth and jaw were refined later. Teeth, tongue and mouth internals are inferred generic structure because the source mouth is closed. Fine scan marks, baked lighting and unobserved back geometry remain approximate. This update smooths the mouth/chin transition and matches shared-texture seam colors.
+
+Licenses: licenses/ and vendor/THREE_LICENSE.txt.

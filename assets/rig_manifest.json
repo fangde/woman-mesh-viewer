@@ -1,0 +1,41 @@
+{
+  "version": "V4 \u00b7 smooth speech rig",
+  "textureSize": [
+    4096,
+    5120
+  ],
+  "frames": 192,
+  "fps": 24,
+  "duration": 8,
+  "faceFocus": [
+    -0.020471168207238176,
+    0.20576488355425954,
+    0.05335676479532258
+  ],
+  "faceDistance": 0.64,
+  "jawMaxAngle": 0.11,
+  "jawCoefficients": {
+    "Open": 1,
+    "A": 0.9,
+    "E": 0.35,
+    "O": 0.8,
+    "U": 0.4,
+    "FV": 0.14,
+    "MBP": 0,
+    "Smile": 0
+  },
+  "jawSampleTime": 0.9583333333333334,
+  "jawSampleAngle": 0.0851122367902706,
+  "speechText": "\u4f60\u597d\uff0c\u6211\u73b0\u5728\u53ef\u4ee5\u8bf4\u8bdd\u4e86\u3002\u5f20\u5634\uff0c\u95ed\u5634\uff0c\u5634\u5507\u90fd\u80fd\u52a8\u3002",
+  "voiceNote": "Synthetic Mandarin voice; approximate lip sync",
+  "controls": [
+    "Open",
+    "A",
+    "E",
+    "O",
+    "U",
+    "FV",
+    "MBP",
+    "Smile"
+  ]
+}
